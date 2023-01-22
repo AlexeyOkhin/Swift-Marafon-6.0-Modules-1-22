@@ -48,6 +48,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="ceJ-9o-fSO" kind="show" id="zEq-W4-nhM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -67,6 +70,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="507.69230769230768" y="-41.232227488151658"/>
+        </scene>
+        <!--Magik Ball View Controller-->
+        <scene sceneID="zr5-Vp-f1z">
+            <objects>
+                <viewController id="ceJ-9o-fSO" customClass="MagikBallViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="njr-FD-dqe">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fsm-Sz-K6U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Rx-K2-QS7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4k-G0-RIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="-1459"/>
         </scene>
         <!--Dice View Controller-->
         <scene sceneID="Noa-BO-aQL">
