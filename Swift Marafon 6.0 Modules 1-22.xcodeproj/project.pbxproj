@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
+		0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */; };
 		0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB93B6297D71180046683E /* DiceViewController.swift */; };
 		0CEB93BC297D72400046683E /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB93BB297D72400046683E /* UIView + Extensions.swift */; };
 		0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2493A297D62FB00A00BD3 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
+		0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		0CEB93B6297D71180046683E /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		0CEB93BB297D72400046683E /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		0CF24937297D62FB00A00BD3 /* Swift Marafon 6.0 Modules 1-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Marafon 6.0 Modules 1-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +51,14 @@
 				0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */,
 			);
 			path = Module5;
+			sourceTree = "<group>";
+		};
+		0C7C9024297D78D500CEB71F /* Module6 */ = {
+			isa = PBXGroup;
+			children = (
+				0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */,
+			);
+			path = Module6;
 			sourceTree = "<group>";
 		};
 		0CEB93B5297D70DE0046683E /* Module4 */ = {
@@ -95,6 +105,7 @@
 		0CF24939297D62FB00A00BD3 /* Swift Marafon 6.0 Modules 1-22 */ = {
 			isa = PBXGroup;
 			children = (
+				0C7C9024297D78D500CEB71F /* Module6 */,
 				0CEB93B8297D713B0046683E /* MainScreen */,
 				0CEB93B9297D720D0046683E /* Extensions */,
 				0CEB93B5297D70DE0046683E /* Module4 */,
@@ -184,6 +195,7 @@
 				0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */,
 				0CF2493D297D62FB00A00BD3 /* SceneDelegate.swift in Sources */,
 				0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */,
+				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
