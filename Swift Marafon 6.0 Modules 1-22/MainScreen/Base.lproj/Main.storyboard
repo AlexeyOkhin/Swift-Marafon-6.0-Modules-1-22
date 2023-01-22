@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-Sm-rIg">
-                                <rect key="frame" x="16" y="142" width="358" height="80"/>
+                                <rect key="frame" x="16" y="142" width="358" height="204"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-Hg-tGn">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="80"/>
@@ -54,6 +54,38 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Da5-iE-vTq">
+                                        <rect key="frame" x="0.0" y="124" width="358" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-N6-nAI">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Esw-Bt-Kji"/>
+                                                    <constraint firstAttribute="height" constant="80" id="o7C-oe-r2q"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 6 (Calculator) " cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="yIq-3f-scF" kind="show" id="Qkx-Rd-tds"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22o-ki-K0k">
+                                                <rect key="frame" x="219" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="9vD-Ss-gPW"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="IY7-4R-FgN"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 5 (Magik Ball)" cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -86,6 +118,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4k-G0-RIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1703" y="-1459"/>
+        </scene>
+        <!--Calculator View Controller-->
+        <scene sceneID="1o0-Df-VGQ">
+            <objects>
+                <viewController id="yIq-3f-scF" customClass="CalculatorViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jWh-Qp-DCG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="He1-bN-TdK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IY7-hY-gix"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOK-ys-F0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="-1793"/>
         </scene>
         <!--Dice View Controller-->
         <scene sceneID="Noa-BO-aQL">
