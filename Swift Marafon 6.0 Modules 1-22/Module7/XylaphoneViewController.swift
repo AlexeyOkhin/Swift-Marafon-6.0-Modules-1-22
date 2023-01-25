@@ -16,7 +16,7 @@ class XylaphoneViewController: UIViewController {
     private var buttonsXylaphone = [UIButton]()
     private let buttonName = ["A", "B", "C", "D", "E", "F", "G"]
 
-    private let player = AVPlayer()
+    private var player: AVAudioPlayer?
 
     private let mainStackView: UIStackView = {
         let stack = UIStackView()
@@ -57,13 +57,13 @@ private extension XylaphoneViewController {
 
     func makeButtons() {
         buttonName.forEach { name in
-            let button = UIButton(type: .roundedRect)
+            let button = UIButton(type: .system)
             button.layer.cornerRadius = 20
             button.setTitle(name, for: .normal)
             button.backgroundColor = rndColor()
-            button.titleLabel?.textColor = .white
+            button.tintColor = .white
             button.titleLabel?.font = .systemFont(ofSize: 30)
-            button.addTarget(self, action: #selector(tapButton(sender:)), for: .touchUpInside)
+            button.addTarget(self, action: #selector(tapButton(sender:)), for: .touchDown)
             buttonsXylaphone.append(button)
         }
     }
@@ -77,8 +77,30 @@ private extension XylaphoneViewController {
     }
 
     @objc func tapButton(sender: UIButton) {
-        print(sender.titleLabel?.text)
+        animationTapButton(button: sender)
+        playSound(button: sender)
 
+
+    }
+
+    func animationTapButton(button: UIButton) {
+
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0) {
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5) {
+                button.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            }
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5) {
+                button.transform = CGAffineTransform.identity
+            }
+        }
+    }
+
+    func playSound(button: UIButton) {
+        let nameSound = button.titleLabel?.text
+        if let urlSound = Bundle.main.url(forResource: nameSound, withExtension: "wav") {
+            player = try? AVAudioPlayer(contentsOf: urlSound, fileTypeHint: "wav")
+            player?.play()
+        }
     }
 
 }
