@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */; };
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
 		0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */; };
+		0CCF5FC0297EF8A200039468 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FB9297EF8A200039468 /* A.wav */; };
+		0CCF5FC1297EF8A200039468 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBA297EF8A200039468 /* C.wav */; };
+		0CCF5FC2297EF8A200039468 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBB297EF8A200039468 /* B.wav */; };
+		0CCF5FC3297EF8A200039468 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBC297EF8A200039468 /* F.wav */; };
+		0CCF5FC4297EF8A200039468 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBD297EF8A200039468 /* G.wav */; };
+		0CCF5FC5297EF8A200039468 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBE297EF8A200039468 /* E.wav */; };
+		0CCF5FC6297EF8A200039468 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBF297EF8A200039468 /* D.wav */; };
 		0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB93B6297D71180046683E /* DiceViewController.swift */; };
 		0CEB93BC297D72400046683E /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEB93BB297D72400046683E /* UIView + Extensions.swift */; };
 		0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2493A297D62FB00A00BD3 /* AppDelegate.swift */; };
@@ -20,8 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylaphoneViewController.swift; sourceTree = "<group>"; };
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
 		0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		0CCF5FB9297EF8A200039468 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		0CCF5FBA297EF8A200039468 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		0CCF5FBB297EF8A200039468 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		0CCF5FBC297EF8A200039468 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		0CCF5FBD297EF8A200039468 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		0CCF5FBE297EF8A200039468 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		0CCF5FBF297EF8A200039468 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		0CEB93B6297D71180046683E /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		0CEB93BB297D72400046683E /* UIView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		0CF24937297D62FB00A00BD3 /* Swift Marafon 6.0 Modules 1-22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Marafon 6.0 Modules 1-22.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C16E94C297D7BE50011A707 /* Module7 */ = {
+			isa = PBXGroup;
+			children = (
+				0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */,
+				0CCF5FB8297EF8A200039468 /* Sounds */,
+			);
+			path = Module7;
+			sourceTree = "<group>";
+		};
 		0C4A7D0D297D763B00EECC6C /* Module5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +84,39 @@
 				0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */,
 			);
 			path = Module6;
+			sourceTree = "<group>";
+		};
+		0CCF5FB6297EF73000039468 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				0CF2493A297D62FB00A00BD3 /* AppDelegate.swift */,
+				0CF2493C297D62FB00A00BD3 /* SceneDelegate.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		0CCF5FB7297EF75100039468 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CF24943297D62FC00A00BD3 /* Assets.xcassets */,
+				0CF24945297D62FC00A00BD3 /* LaunchScreen.storyboard */,
+				0CF24948297D62FC00A00BD3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CCF5FB8297EF8A200039468 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0CCF5FB9297EF8A200039468 /* A.wav */,
+				0CCF5FBA297EF8A200039468 /* C.wav */,
+				0CCF5FBB297EF8A200039468 /* B.wav */,
+				0CCF5FBC297EF8A200039468 /* F.wav */,
+				0CCF5FBD297EF8A200039468 /* G.wav */,
+				0CCF5FBE297EF8A200039468 /* E.wav */,
+				0CCF5FBF297EF8A200039468 /* D.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		0CEB93B5297D70DE0046683E /* Module4 */ = {
@@ -105,16 +163,14 @@
 		0CF24939297D62FB00A00BD3 /* Swift Marafon 6.0 Modules 1-22 */ = {
 			isa = PBXGroup;
 			children = (
-				0C7C9024297D78D500CEB71F /* Module6 */,
-				0CEB93B8297D713B0046683E /* MainScreen */,
+				0CCF5FB6297EF73000039468 /* Aplication */,
+				0CCF5FB7297EF75100039468 /* Resources */,
 				0CEB93B9297D720D0046683E /* Extensions */,
+				0CEB93B8297D713B0046683E /* MainScreen */,
 				0CEB93B5297D70DE0046683E /* Module4 */,
 				0C4A7D0D297D763B00EECC6C /* Module5 */,
-				0CF2493A297D62FB00A00BD3 /* AppDelegate.swift */,
-				0CF2493C297D62FB00A00BD3 /* SceneDelegate.swift */,
-				0CF24943297D62FC00A00BD3 /* Assets.xcassets */,
-				0CF24945297D62FC00A00BD3 /* LaunchScreen.storyboard */,
-				0CF24948297D62FC00A00BD3 /* Info.plist */,
+				0C7C9024297D78D500CEB71F /* Module6 */,
+				0C16E94C297D7BE50011A707 /* Module7 */,
 			);
 			path = "Swift Marafon 6.0 Modules 1-22";
 			sourceTree = "<group>";
@@ -177,9 +233,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CCF5FC4297EF8A200039468 /* G.wav in Resources */,
 				0CF24947297D62FC00A00BD3 /* LaunchScreen.storyboard in Resources */,
+				0CCF5FC3297EF8A200039468 /* F.wav in Resources */,
 				0CF24944297D62FC00A00BD3 /* Assets.xcassets in Resources */,
+				0CCF5FC0297EF8A200039468 /* A.wav in Resources */,
+				0CCF5FC2297EF8A200039468 /* B.wav in Resources */,
+				0CCF5FC5297EF8A200039468 /* E.wav in Resources */,
+				0CCF5FC6297EF8A200039468 /* D.wav in Resources */,
 				0CF24942297D62FB00A00BD3 /* Main.storyboard in Resources */,
+				0CCF5FC1297EF8A200039468 /* C.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +260,7 @@
 				0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
+				0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W856DM7S8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swift Marafon 6.0 Modules 1-22/Info.plist";
+				INFOPLIST_FILE = "Swift Marafon 6.0 Modules 1-22/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +437,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W856DM7S8L;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Swift Marafon 6.0 Modules 1-22/Info.plist";
+				INFOPLIST_FILE = "Swift Marafon 6.0 Modules 1-22/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

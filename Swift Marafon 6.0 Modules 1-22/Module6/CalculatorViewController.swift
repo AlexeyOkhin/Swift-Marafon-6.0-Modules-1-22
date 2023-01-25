@@ -44,7 +44,7 @@ private extension CalculatorViewController {
     }
 
     func makeButton() {
-        var arraySymbols = [["0", ".", "="], ["1", "2", "3", "+"], ["4", "5", "6", "-"], ["7", "8", "9", "X"], ["AC", "+/-", "%", "/"]]
+        let arraySymbols = [["0", ".", "="], ["1", "2", "3", "+"], ["4", "5", "6", "-"], ["7", "8", "9", "X"], ["AC", "+/-", "%", "/"]]
         arraySymbols.forEach { array in
             var arButton = [UIButton]()
             array.forEach { symbol in
