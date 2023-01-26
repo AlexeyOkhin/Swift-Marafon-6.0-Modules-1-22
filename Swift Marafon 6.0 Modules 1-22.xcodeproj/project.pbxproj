@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */; };
+		0C22FC8D29819212003DDCC2 /* EggeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22FC8C29819212003DDCC2 /* EggeTimerViewController.swift */; };
+		0C22FC9029819319003DDCC2 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */; };
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
 		0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */; };
 		0CCF5FC0297EF8A200039468 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FB9297EF8A200039468 /* A.wav */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylaphoneViewController.swift; sourceTree = "<group>"; };
+		0C22FC8C29819212003DDCC2 /* EggeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggeTimerViewController.swift; sourceTree = "<group>"; };
+		0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
 		0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		0CCF5FB9297EF8A200039468 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
@@ -68,6 +72,23 @@
 				0CCF5FB8297EF8A200039468 /* Sounds */,
 			);
 			path = Module7;
+			sourceTree = "<group>";
+		};
+		0C22FC8B298191E1003DDCC2 /* Module8 */ = {
+			isa = PBXGroup;
+			children = (
+				0C22FC8E29819246003DDCC2 /* Sounds */,
+				0C22FC8C29819212003DDCC2 /* EggeTimerViewController.swift */,
+			);
+			path = Module8;
+			sourceTree = "<group>";
+		};
+		0C22FC8E29819246003DDCC2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		0C4A7D0D297D763B00EECC6C /* Module5 */ = {
@@ -171,6 +192,7 @@
 				0C4A7D0D297D763B00EECC6C /* Module5 */,
 				0C7C9024297D78D500CEB71F /* Module6 */,
 				0C16E94C297D7BE50011A707 /* Module7 */,
+				0C22FC8B298191E1003DDCC2 /* Module8 */,
 			);
 			path = "Swift Marafon 6.0 Modules 1-22";
 			sourceTree = "<group>";
@@ -236,6 +258,7 @@
 				0CCF5FC4297EF8A200039468 /* G.wav in Resources */,
 				0CF24947297D62FC00A00BD3 /* LaunchScreen.storyboard in Resources */,
 				0CCF5FC3297EF8A200039468 /* F.wav in Resources */,
+				0C22FC9029819319003DDCC2 /* alarm_sound.mp3 in Resources */,
 				0CF24944297D62FC00A00BD3 /* Assets.xcassets in Resources */,
 				0CCF5FC0297EF8A200039468 /* A.wav in Resources */,
 				0CCF5FC2297EF8A200039468 /* B.wav in Resources */,
@@ -253,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C22FC8D29819212003DDCC2 /* EggeTimerViewController.swift in Sources */,
 				0CEB93BC297D72400046683E /* UIView + Extensions.swift in Sources */,
 				0CF2493F297D62FB00A00BD3 /* mainScreenController.swift in Sources */,
 				0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */,
