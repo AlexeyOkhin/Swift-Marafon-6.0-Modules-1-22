@@ -114,10 +114,13 @@
                                                     <constraint firstAttribute="height" constant="80" id="nzP-nS-aG8"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Module 9 ()" cornerStyle="medium">
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 9 (Quizzler)" cornerStyle="medium">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="1IE-0e-bHI" kind="show" id="G96-8n-fD2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -217,6 +220,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MF0-de-vFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2394" y="-798"/>
+        </scene>
+        <!--Quizzler View Controller-->
+        <scene sceneID="fZr-xM-7w5">
+            <objects>
+                <viewController id="1IE-0e-bHI" customClass="QuizzlerViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJ0-5b-RRb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f6S-SJ-f2l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8h-WZ-VFP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXj-s6-eYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="-798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HiY-hu-TLg">

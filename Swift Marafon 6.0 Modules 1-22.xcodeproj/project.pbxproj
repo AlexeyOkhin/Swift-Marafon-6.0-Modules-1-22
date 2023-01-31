@@ -12,6 +12,9 @@
 		0C22FC9029819319003DDCC2 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */; };
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
 		0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */; };
+		0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA754752989217D00FEC2CC /* QuizzlerViewController.swift */; };
+		0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA754772989293200FEC2CC /* AnswerButton.swift */; };
+		0CA7547A29892FC200FEC2CC /* ModelQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA7547929892FC200FEC2CC /* ModelQuestions.swift */; };
 		0CCF5FC0297EF8A200039468 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FB9297EF8A200039468 /* A.wav */; };
 		0CCF5FC1297EF8A200039468 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBA297EF8A200039468 /* C.wav */; };
 		0CCF5FC2297EF8A200039468 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF5FBB297EF8A200039468 /* B.wav */; };
@@ -35,6 +38,9 @@
 		0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
 		0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		0CA754752989217D00FEC2CC /* QuizzlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzlerViewController.swift; sourceTree = "<group>"; };
+		0CA754772989293200FEC2CC /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
+		0CA7547929892FC200FEC2CC /* ModelQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelQuestions.swift; sourceTree = "<group>"; };
 		0CCF5FB9297EF8A200039468 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		0CCF5FBA297EF8A200039468 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
 		0CCF5FBB297EF8A200039468 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
@@ -105,6 +111,16 @@
 				0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */,
 			);
 			path = Module6;
+			sourceTree = "<group>";
+		};
+		0CA754742989212600FEC2CC /* Module9 */ = {
+			isa = PBXGroup;
+			children = (
+				0CA754752989217D00FEC2CC /* QuizzlerViewController.swift */,
+				0CA754772989293200FEC2CC /* AnswerButton.swift */,
+				0CA7547929892FC200FEC2CC /* ModelQuestions.swift */,
+			);
+			path = Module9;
 			sourceTree = "<group>";
 		};
 		0CCF5FB6297EF73000039468 /* Aplication */ = {
@@ -193,6 +209,7 @@
 				0C7C9024297D78D500CEB71F /* Module6 */,
 				0C16E94C297D7BE50011A707 /* Module7 */,
 				0C22FC8B298191E1003DDCC2 /* Module8 */,
+				0CA754742989212600FEC2CC /* Module9 */,
 			);
 			path = "Swift Marafon 6.0 Modules 1-22";
 			sourceTree = "<group>";
@@ -282,9 +299,12 @@
 				0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */,
 				0CF2493D297D62FB00A00BD3 /* SceneDelegate.swift in Sources */,
 				0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */,
+				0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
+				0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */,
 				0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */,
+				0CA7547A29892FC200FEC2CC /* ModelQuestions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
