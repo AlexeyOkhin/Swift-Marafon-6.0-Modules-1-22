@@ -32,6 +32,7 @@
 		0CF24942297D62FB00A00BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24940297D62FB00A00BD3 /* Main.storyboard */; };
 		0CF24944297D62FC00A00BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24943297D62FC00A00BD3 /* Assets.xcassets */; };
 		0CF24947297D62FC00A00BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24945297D62FC00A00BD3 /* LaunchScreen.storyboard */; };
+		0CFDB7E1299C080100ABEF2E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB7E0299C080100ABEF2E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		0CF24943297D62FC00A00BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CF24946297D62FC00A00BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CF24948297D62FC00A00BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFDB7E0299C080100ABEF2E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		0C34ED7D299AA3520005DD6A /* Module12 */ = {
 			isa = PBXGroup;
 			children = (
+				0CFDB7DF299C07DA00ABEF2E /* ResultModule */,
 				0C34ED7E299AA3BA0005DD6A /* TipsyViewController.swift */,
 			);
 			path = Module12;
@@ -228,6 +231,14 @@
 			path = "Swift Marafon 6.0 Modules 1-22";
 			sourceTree = "<group>";
 		};
+		0CFDB7DF299C07DA00ABEF2E /* ResultModule */ = {
+			isa = PBXGroup;
+			children = (
+				0CFDB7E0299C080100ABEF2E /* ResultViewController.swift */,
+			);
+			path = ResultModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,6 +328,7 @@
 				0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
+				0CFDB7E1299C080100ABEF2E /* ResultViewController.swift in Sources */,
 				0C34ED7F299AA3BA0005DD6A /* TipsyViewController.swift in Sources */,
 				0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */,
 				0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */,
