@@ -12,6 +12,7 @@ class TipsyViewController: UIViewController {
     // MARK: - IBOutlets
     // MARK: - Public Properties
     // MARK: - Private Properties
+    var modelSplit = SplitModel(total: "", percent: 0, numSplit: 0)
 
     private let totalLabel: UILabel = {
         let label = UILabel()
@@ -28,6 +29,7 @@ class TipsyViewController: UIViewController {
         textField.textAlignment = .center
         textField.keyboardType = .decimalPad
         textField.placeholder = "enter price"
+
         return textField
     }()
 
@@ -45,22 +47,26 @@ class TipsyViewController: UIViewController {
         label.textColor = .systemGray
         return label
     }()
+//MARK: - UIButton
 
     private lazy var percentButton1: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("0%", for: .normal)
+        button.addTarget(self, action: #selector(tapedButton), for: .touchUpInside)
         return button
     }()
 
     private lazy var percentButton2: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("10%", for: .normal)
+        button.addTarget(self, action: #selector(tapedButton), for: .touchUpInside)
         return button
     }()
 
     private lazy var percentButton3: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("20%", for: .normal)
+        button.addTarget(self, action: #selector(tapedButton), for: .touchUpInside)
         return button
     }()
 
@@ -81,8 +87,9 @@ class TipsyViewController: UIViewController {
         return label
     }()
 
-    private let stepper: UIStepper = {
+    private lazy var stepper: UIStepper = {
         let stepper = UIStepper()
+        stepper.addTarget(self, action: #selector(tapSteper), for: .touchUpInside)
         return stepper
     }()
 
@@ -92,16 +99,41 @@ class TipsyViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.setTitle("Calculate", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(calculateSplit), for: .touchUpInside)
         return button
     }()
 
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        priceTectField.delegate = self
         setConstraints()
     }
 
     // MARK: - Public Methods
+
+    @objc private func tapedButton(sender: UIButton) {
+        resetButton()
+        sender.backgroundColor = .green
+        priceTectField.endEditing(true)
+        switch sender.currentTitle {
+        case "10%": modelSplit.percent = 0.1
+        case "20%": modelSplit.percent = 0.2
+        default: modelSplit.percent = 0.0
+        }
+    }
+
+    @objc private func calculateSplit() {
+        let resultVC = ResultViewController()
+        resultVC.tottalPerPerson = modelSplit.resultSplit()
+
+        present(resultVC, animated: true)
+
+    }
+    @objc private func tapSteper() {
+        spliteLabel.text = String(format: "%g", stepper.value)
+        modelSplit.numSplit = Float(stepper.value)
+    }
 
     private func setConstraints() {
 
@@ -114,7 +146,6 @@ class TipsyViewController: UIViewController {
         stackStepper.axis = .horizontal
         stackStepper.distribution = .fill
         stackStepper.alignment = .center
-        //stackStepper.spacing = 20
 
         let mainGreenStack = UIStackView(arrangedSubviews: [selectLabel, stackButton, chooseLabel, stackStepper])
         mainGreenStack.axis = .vertical
@@ -161,10 +192,19 @@ class TipsyViewController: UIViewController {
     // MARK: - IBActions
     // MARK: - Private Methods
 
-    private func setupConstreints() {
-        
+    private func resetButton() {
+        percentButton1.backgroundColor = .clear
+        percentButton2.backgroundColor = .clear
+        percentButton3.backgroundColor = .clear
     }
 }
 
 // MARK: - * <- extensions
+
+extension TipsyViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        modelSplit.total += string
+        return true
+    }
+}
 

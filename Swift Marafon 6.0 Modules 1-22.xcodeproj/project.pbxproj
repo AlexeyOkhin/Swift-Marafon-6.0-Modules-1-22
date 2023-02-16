@@ -10,6 +10,7 @@
 		0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */; };
 		0C22FC8D29819212003DDCC2 /* EggeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C22FC8C29819212003DDCC2 /* EggeTimerViewController.swift */; };
 		0C22FC9029819319003DDCC2 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */; };
+		0C271BFA299D47D700365AB6 /* SplitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C271BF9299D47D700365AB6 /* SplitModel.swift */; };
 		0C34ED7F299AA3BA0005DD6A /* TipsyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34ED7E299AA3BA0005DD6A /* TipsyViewController.swift */; };
 		0C34ED81299AA3E90005DD6A /* Guidelines in Resources */ = {isa = PBXBuildFile; fileRef = 0C34ED80299AA3E90005DD6A /* Guidelines */; };
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
@@ -39,6 +40,7 @@
 		0C16E94D297D7C040011A707 /* XylaphoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylaphoneViewController.swift; sourceTree = "<group>"; };
 		0C22FC8C29819212003DDCC2 /* EggeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggeTimerViewController.swift; sourceTree = "<group>"; };
 		0C22FC8F29819319003DDCC2 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		0C271BF9299D47D700365AB6 /* SplitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitModel.swift; sourceTree = "<group>"; };
 		0C34ED7E299AA3BA0005DD6A /* TipsyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyViewController.swift; sourceTree = "<group>"; };
 		0C34ED80299AA3E90005DD6A /* Guidelines */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guidelines; sourceTree = "<group>"; };
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				0CFDB7DF299C07DA00ABEF2E /* ResultModule */,
 				0C34ED7E299AA3BA0005DD6A /* TipsyViewController.swift */,
+				0C271BF9299D47D700365AB6 /* SplitModel.swift */,
 			);
 			path = Module12;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
+				0C271BFA299D47D700365AB6 /* SplitModel.swift in Sources */,
 				0CFDB7E1299C080100ABEF2E /* ResultViewController.swift in Sources */,
 				0C34ED7F299AA3BA0005DD6A /* TipsyViewController.swift in Sources */,
 				0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */,
