@@ -149,10 +149,13 @@
                                                     <constraint firstAttribute="height" constant="80" id="tzw-lE-tuk"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Module 13 ()" cornerStyle="medium">
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 13 (Clima)" cornerStyle="medium">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="6yj-8t-Fa4" kind="show" id="3E6-Xw-AJG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -302,6 +305,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dt-H3-2t3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-214" y="-41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i8U-A1-URr">
+            <objects>
+                <viewController id="6yj-8t-Fa4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktX-KO-pvG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uMd-y5-w9S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="673-Tt-eUl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfE-Gg-YxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="-55"/>
         </scene>
     </scenes>
     <resources>
