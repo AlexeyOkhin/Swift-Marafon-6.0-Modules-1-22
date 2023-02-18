@@ -33,6 +33,8 @@
 		0CF24942297D62FB00A00BD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24940297D62FB00A00BD3 /* Main.storyboard */; };
 		0CF24944297D62FC00A00BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24943297D62FC00A00BD3 /* Assets.xcassets */; };
 		0CF24947297D62FC00A00BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF24945297D62FC00A00BD3 /* LaunchScreen.storyboard */; };
+		0CFAFCBF29A0BA7700DEE6A4 /* ClimaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAFCBE29A0BA7700DEE6A4 /* ClimaViewController.swift */; };
+		0CFAFCC129A0DB7B00DEE6A4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAFCC029A0DB7B00DEE6A4 /* WeatherModel.swift */; };
 		0CFDB7E1299C080100ABEF2E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFDB7E0299C080100ABEF2E /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		0CF24943297D62FC00A00BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CF24946297D62FC00A00BD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CF24948297D62FC00A00BD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFAFCBE29A0BA7700DEE6A4 /* ClimaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaViewController.swift; sourceTree = "<group>"; };
+		0CFAFCC029A0DB7B00DEE6A4 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		0CFDB7E0299C080100ABEF2E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +222,7 @@
 		0CF24939297D62FB00A00BD3 /* Swift Marafon 6.0 Modules 1-22 */ = {
 			isa = PBXGroup;
 			children = (
+				0CFAFCBD29A0BA5E00DEE6A4 /* Module13 */,
 				0C34ED80299AA3E90005DD6A /* Guidelines */,
 				0CCF5FB6297EF73000039468 /* Aplication */,
 				0CCF5FB7297EF75100039468 /* Resources */,
@@ -232,6 +237,15 @@
 				0C34ED7D299AA3520005DD6A /* Module12 */,
 			);
 			path = "Swift Marafon 6.0 Modules 1-22";
+			sourceTree = "<group>";
+		};
+		0CFAFCBD29A0BA5E00DEE6A4 /* Module13 */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAFCBE29A0BA7700DEE6A4 /* ClimaViewController.swift */,
+				0CFAFCC029A0DB7B00DEE6A4 /* WeatherModel.swift */,
+			);
+			path = Module13;
 			sourceTree = "<group>";
 		};
 		0CFDB7DF299C07DA00ABEF2E /* ResultModule */ = {
@@ -331,10 +345,12 @@
 				0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
+				0CFAFCBF29A0BA7700DEE6A4 /* ClimaViewController.swift in Sources */,
 				0C271BFA299D47D700365AB6 /* SplitModel.swift in Sources */,
 				0CFDB7E1299C080100ABEF2E /* ResultViewController.swift in Sources */,
 				0C34ED7F299AA3BA0005DD6A /* TipsyViewController.swift in Sources */,
 				0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */,
+				0CFAFCC129A0DB7B00DEE6A4 /* WeatherModel.swift in Sources */,
 				0C16E94E297D7C040011A707 /* XylaphoneViewController.swift in Sources */,
 				0CA7547A29892FC200FEC2CC /* ModelQuestions.swift in Sources */,
 			);

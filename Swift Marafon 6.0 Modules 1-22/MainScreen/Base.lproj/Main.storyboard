@@ -306,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="-214" y="-41"/>
         </scene>
-        <!--View Controller-->
+        <!--Clima View Controller-->
         <scene sceneID="i8U-A1-URr">
             <objects>
-                <viewController id="6yj-8t-Fa4" sceneMemberID="viewController">
+                <viewController id="6yj-8t-Fa4" customClass="ClimaViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ktX-KO-pvG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
