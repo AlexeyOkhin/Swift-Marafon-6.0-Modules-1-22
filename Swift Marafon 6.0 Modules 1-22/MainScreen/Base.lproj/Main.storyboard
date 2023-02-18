@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-Sm-rIg">
-                                <rect key="frame" x="16" y="142" width="358" height="328"/>
+                                <rect key="frame" x="16" y="142" width="358" height="452"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-Hg-tGn">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="80"/>
@@ -114,10 +114,48 @@
                                                     <constraint firstAttribute="height" constant="80" id="nzP-nS-aG8"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Module 9 ()" cornerStyle="medium">
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 9 (Quizzler)" cornerStyle="medium">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <color key="baseBackgroundColor" systemColor="systemMintColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="1IE-0e-bHI" kind="show" id="G96-8n-fD2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="nSl-tb-gWU">
+                                        <rect key="frame" x="0.0" y="372" width="358" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH7-wf-mU9">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Ohl-UZ-kBL"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="vua-y0-fpa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 12 (Tipsy) " cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="d9B-YA-IsO" kind="show" id="zWA-A7-CMN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-Sf-Sc2">
+                                                <rect key="frame" x="219" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="RNO-d5-0Zh"/>
+                                                    <constraint firstAttribute="height" constant="80" id="tzw-lE-tuk"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 13 (Clima)" cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="6yj-8t-Fa4" kind="show" id="3E6-Xw-AJG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -218,6 +256,38 @@
             </objects>
             <point key="canvasLocation" x="2394" y="-798"/>
         </scene>
+        <!--Quizzler View Controller-->
+        <scene sceneID="fZr-xM-7w5">
+            <objects>
+                <viewController id="1IE-0e-bHI" customClass="QuizzlerViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJ0-5b-RRb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f6S-SJ-f2l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B8h-WZ-VFP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXj-s6-eYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="-798"/>
+        </scene>
+        <!--Tipsy View Controller-->
+        <scene sceneID="xBR-pI-hV7">
+            <objects>
+                <viewController id="d9B-YA-IsO" customClass="TipsyViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekJ-S8-grN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XLD-Ek-WNU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lK6-gg-sWQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eoe-06-Teo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3802" y="-787"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HiY-hu-TLg">
             <objects>
@@ -235,6 +305,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dt-H3-2t3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-214" y="-41"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i8U-A1-URr">
+            <objects>
+                <viewController id="6yj-8t-Fa4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ktX-KO-pvG">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uMd-y5-w9S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="673-Tt-eUl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfE-Gg-YxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="-55"/>
         </scene>
     </scenes>
     <resources>
