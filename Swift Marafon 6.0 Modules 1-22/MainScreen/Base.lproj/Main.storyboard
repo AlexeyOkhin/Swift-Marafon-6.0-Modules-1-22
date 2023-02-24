@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="TD8-Sm-rIg">
-                                <rect key="frame" x="16" y="142" width="358" height="452"/>
+                                <rect key="frame" x="16" y="142" width="358" height="576"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="jR4-Hg-tGn">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="80"/>
@@ -156,6 +156,38 @@
                                                 <connections>
                                                     <segue destination="6yj-8t-Fa4" kind="show" id="3E6-Xw-AJG"/>
                                                 </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-9x-Mvj">
+                                        <rect key="frame" x="0.0" y="496" width="358" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFg-0A-WlH">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Yuj-ej-GYv"/>
+                                                    <constraint firstAttribute="height" constant="80" id="hvc-np-tlo"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module 14 (Coin) " cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="qzJ-1V-TTW" kind="show" id="rMf-ys-hpC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="coQ-K8-gQL">
+                                                <rect key="frame" x="219" y="0.0" width="139" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="9Ht-Po-aSw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="m8a-nO-pLd"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Module" cornerStyle="medium">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemMintColor"/>
+                                                </buttonConfiguration>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -321,6 +353,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfE-Gg-YxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2394" y="-55"/>
+        </scene>
+        <!--Coin View Controller-->
+        <scene sceneID="zW8-C1-5ES">
+            <objects>
+                <viewController id="qzJ-1V-TTW" customClass="CoinViewController" customModule="Swift_Marafon_6_0_Modules_1_22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNg-pn-WRT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YOA-bf-MO2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="buU-OH-Ngf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePx-dy-Y5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3156" y="-43"/>
         </scene>
     </scenes>
     <resources>

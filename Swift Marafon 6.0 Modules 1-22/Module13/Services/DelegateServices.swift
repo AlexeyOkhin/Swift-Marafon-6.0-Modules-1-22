@@ -15,7 +15,7 @@ protocol WeatherServiceDelegate: AnyObject {
 struct WeatherService {
     weak var delegate: WeatherServiceDelegate?
 
-    private let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?appid=2db3370d38fa5949b36a4f25da66c378&units=metric&lang=ru")!
+    private let weatherURL = URL(string: "https://api.openweathermap.org/data/2.5/weather?appid=4f25da66c378&units=metric&lang=ru")!
 
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)"
