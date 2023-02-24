@@ -10,7 +10,8 @@
 xcuserdata/
 
 ## keys
-Module13/DelegateServices.swift
+Module13/Services/DelegateServices.swift
+Module14/Model/CoinManager.swift
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
