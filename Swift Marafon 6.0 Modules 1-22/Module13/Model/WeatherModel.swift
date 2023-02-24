@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WeatherModel {
+struct WeatherModel: Decodable {
     let conditionId: Int
     let cityName: String
     let temperature: Double
@@ -36,4 +36,20 @@ struct WeatherModel {
             return "cloud"
         }
     }
+}
+
+struct WeatherData: Decodable {
+    let weather: [Weather]
+    let main: Main
+    let name: String
+
+}
+
+struct Main: Decodable {
+    let temp: Double
+}
+
+struct Weather: Decodable {
+    let id: Int
+    let description: String
 }

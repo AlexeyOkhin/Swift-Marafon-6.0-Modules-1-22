@@ -212,18 +212,18 @@ extension ClimaViewController: CLLocationManagerDelegate {
     }
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-           if let location = locations.last {
-               locationManager.stopUpdatingLocation()
-               let lat = location.coordinate.latitude
-               let long = location.coordinate.longitude
-               print("lat: \(lat) long: \(long)")
-               weatherService.fetchWeather(latitude: lat, longitude: long)
-           }
+       if let location = locations.last {
+           locationManager.stopUpdatingLocation()
+           let lat = location.coordinate.latitude
+           let long = location.coordinate.longitude
+           print("lat: \(lat) long: \(long)")
+           weatherService.fetchWeather(latitude: lat, longitude: long)
        }
+   }
 
-       func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-           print(error)
-       }
+   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+       print(error)
+   }
 }
 
 // MARK: - WeatherManagerDelegate
