@@ -15,6 +15,8 @@
 		0C34ED81299AA3E90005DD6A /* Guidelines in Resources */ = {isa = PBXBuildFile; fileRef = 0C34ED80299AA3E90005DD6A /* Guidelines */; };
 		0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */; };
 		0C70744629A8C2B50035A981 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70744529A8C2B50035A981 /* CoinViewController.swift */; };
+		0C70744929A8CEC00035A981 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70744829A8CEC00035A981 /* CoinManager.swift */; };
+		0C70744B29AA48760035A981 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70744A29AA48760035A981 /* CoinModel.swift */; };
 		0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */; };
 		0CA754762989217D00FEC2CC /* QuizzlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA754752989217D00FEC2CC /* QuizzlerViewController.swift */; };
 		0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA754772989293200FEC2CC /* AnswerButton.swift */; };
@@ -51,6 +53,8 @@
 		0C34ED80299AA3E90005DD6A /* Guidelines */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guidelines; sourceTree = "<group>"; };
 		0C4A7D0E297D765D00EECC6C /* MagikBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagikBallViewController.swift; sourceTree = "<group>"; };
 		0C70744529A8C2B50035A981 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		0C70744829A8CEC00035A981 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		0C70744A29AA48760035A981 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		0C7C9025297D78EC00CEB71F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		0CA754752989217D00FEC2CC /* QuizzlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzlerViewController.swift; sourceTree = "<group>"; };
 		0CA754772989293200FEC2CC /* AnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerButton.swift; sourceTree = "<group>"; };
@@ -138,9 +142,19 @@
 		0C70744429A8C29C0035A981 /* Module14 */ = {
 			isa = PBXGroup;
 			children = (
+				0C70744729A8CE6E0035A981 /* Model */,
 				0C70744529A8C2B50035A981 /* CoinViewController.swift */,
 			);
 			path = Module14;
+			sourceTree = "<group>";
+		};
+		0C70744729A8CE6E0035A981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C70744829A8CEC00035A981 /* CoinManager.swift */,
+				0C70744A29AA48760035A981 /* CoinModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0C7C9024297D78D500CEB71F /* Module6 */ = {
@@ -390,6 +404,7 @@
 			files = (
 				0CFAFCCB29A0E4B200DEE6A4 /* DelegateServices.swift in Sources */,
 				0C22FC8D29819212003DDCC2 /* EggeTimerViewController.swift in Sources */,
+				0C70744929A8CEC00035A981 /* CoinManager.swift in Sources */,
 				0CEB93BC297D72400046683E /* UIView + Extensions.swift in Sources */,
 				0CF2493F297D62FB00A00BD3 /* mainScreenController.swift in Sources */,
 				0CF2493B297D62FB00A00BD3 /* AppDelegate.swift in Sources */,
@@ -397,6 +412,7 @@
 				0CEB93B7297D71180046683E /* DiceViewController.swift in Sources */,
 				0CA754782989293200FEC2CC /* AnswerButton.swift in Sources */,
 				0C7C9026297D78EC00CEB71F /* CalculatorViewController.swift in Sources */,
+				0C70744B29AA48760035A981 /* CoinModel.swift in Sources */,
 				0C4A7D0F297D765D00EECC6C /* MagikBallViewController.swift in Sources */,
 				0CFAFCBF29A0BA7700DEE6A4 /* ClimaViewController.swift in Sources */,
 				0C271BFA299D47D700365AB6 /* SplitModel.swift in Sources */,
