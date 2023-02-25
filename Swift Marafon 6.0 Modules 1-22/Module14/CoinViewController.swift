@@ -38,11 +38,15 @@ class CoinViewController: UIViewController {
 
     }()
 
+    private var coinManager = CoinManager()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
         coinPicker.delegate = self
         coinPicker.dataSource = self
+        coinManager.delegate = self
+        
         view.backgroundColor = .systemTeal
     }
 
@@ -80,18 +84,28 @@ extension CoinViewController: UIPickerViewDataSource {
     }
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        CoinManager().currencyArray.count
+        coinManager.currencyArray.count
     }
 }
 
 extension CoinViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return CoinManager().currencyArray[row]
+        return coinManager.currencyArray[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let typeCoin = coinManager.currencyArray[row]
+        coinManager.fetchCurse(type: typeCoin)
+        coinTypeLabel.text = typeCoin
     }
 }
 
 extension CoinViewController: CoinServiceDelegate {
     func didFetchCurse(_ coinService: CoinManager, _ coin: CoinModel) {
+        updateUI(with: coin)
+    }
 
+    private func updateUI(with coinModel: CoinModel) {
+        coinValueLabel.text = String(format: "%.1f", coinModel.rate)
     }
 }
